@@ -2,23 +2,26 @@ define(function(require){
 require('$model/UI2/system/components/justep/model/model');
 require('$model/UI2/system/components/justep/loadingBar/loadingBar');
 require('$model/UI2/system/components/justep/button/button');
-require('$model/UI2/system/components/justep/row/row');
+require('$model/UI2/system/components/justep/input/input');
 require('$model/UI2/system/components/justep/list/list');
-require('$model/UI2/system/components/justep/titleBar/titleBar');
 require('$model/UI2/system/components/justep/panel/child');
+require('$model/UI2/system/components/justep/panel/panel');
+require('$model/UI2/system/components/justep/contents/content');
+require('$model/UI2/system/components/justep/row/row');
+require('$model/UI2/system/components/justep/titleBar/titleBar');
+require('$model/UI2/system/components/justep/contents/contents');
 require('$model/UI2/system/components/justep/data/data');
 require('$model/UI2/system/components/justep/window/window');
 require('$model/UI2/system/components/justep/button/buttonGroup');
-require('$model/UI2/system/components/justep/panel/panel');
 var __parent1=require('$model/UI2/system/lib/base/modelBase'); 
-var __parent0=require('$model/UI2/ZJP-mobile/mainActivity'); 
+var __parent0=require('$model/UI2/teach/mainActivity'); 
 var __result = __parent1._extend(__parent0).extend({
 	constructor:function(contextUrl){
 	this.__sysParam='true';
 	this.__contextUrl=contextUrl;
 	this.__id='';
-	this.__cid='cjiq6be';
-	this._flag_='f4f1aed740f977555d80d89a6d675051';
+	this.__cid='ca2IbA3';
+	this._flag_='781be610d3a4de4479e7e207d2ddcc1e';
 	this._wCfg_={};
 	this._appCfg_={};
 	this.callParent(contextUrl);

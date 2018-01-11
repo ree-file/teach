@@ -7,9 +7,7 @@
   <div component="$UI/system/components/justep/data/data" autoLoad="true" xid="content" idColumn="id" confirmDelete="false"><column name="id" type="Integer" xid="xid3"></column>
   <column name="name" type="String" xid="xid4"></column>
   <column name="parent" type="Integer" xid="xid6"></column>
-  <column name="Bind-name" type="String" xid="xid7"></column>
-  <column name="status" type="Integer" xid="xid8"></column>
-  <data xid="default5">[{&quot;id&quot;:1,&quot;name&quot;:&quot;qweqw&quot;,&quot;parent&quot;:1,&quot;Bind-name&quot;:&quot;qweq&quot;,&quot;status&quot;:0},{&quot;id&quot;:2,&quot;name&quot;:&quot;qweqwe&quot;,&quot;parent&quot;:2,&quot;Bind-name&quot;:&quot;qweqd&quot;,&quot;status&quot;:0},{&quot;id&quot;:3,&quot;name&quot;:&quot;asdasd&quot;,&quot;parent&quot;:1,&quot;Bind-name&quot;:&quot;qweq&quot;,&quot;status&quot;:{&quot;value&quot;:&quot;&quot;}}]</data></div></div>  
+  <data xid="default1">[{&quot;id&quot;:1,&quot;name&quot;:&quot;A公园&quot;,&quot;parent&quot;:1},{&quot;id&quot;:2,&quot;name&quot;:&quot;B公园&quot;,&quot;parent&quot;:1},{&quot;id&quot;:3,&quot;name&quot;:&quot;C公园&quot;,&quot;parent&quot;:1},{&quot;id&quot;:4,&quot;name&quot;:&quot;X学校&quot;,&quot;parent&quot;:2},{&quot;id&quot;:5,&quot;name&quot;:&quot;Z学校&quot;,&quot;parent&quot;:2}]</data></div></div>  
   <div component="$UI/system/components/justep/panel/panel" 
     class="x-panel x-full" xid="panel1"> 
       <div class="x-panel-top" xid="top1"> 
@@ -32,16 +30,15 @@
    <ul class="x-list-template" xid="listTemplateUl1">
     <li xid="li1"><h4 xid="h41" bind-text='
 
- val("type")'>h4</h4><div component="$UI/system/components/justep/list/list" class="x-list" xid="list2" data="content" filter=' val("id")==$row.val("parent")'>
+ val("type")' class="centerH">h4</h4><div component="$UI/system/components/justep/list/list" class="x-list" xid="list2" data="content" filter=' val("id")==$row.val("parent")'>
    <ul class="x-list-template" xid="listTemplateUl2">
-    <li xid="li2"><div component="$UI/system/components/justep/row/row" class="x-row" xid="row1">
-   <div class="x-col" xid="col3"></div></div>
-  <div component="$UI/system/components/justep/row/row" class="x-row" xid="row2">
-   <div class="x-col" xid="col5"><span component="$UI/system/components/justep/button/radio" class="x-radio" xid="radio1" bind-name=' val("parent")' onChange="radio1Change" bind-attr-id="$index()" bind-value='ref("name")' checked="false"></span>
+    <li xid="li2">
+  <div component="$UI/system/components/justep/row/row" class="x-row" xid="row1">
+   <div class="x-col" xid="col1"></div>
+   <div class="x-col" xid="col2"><a component="$UI/system/components/justep/button/button" class="btn btn-default btn-block centerBtn" label="button" xid="button2" onClick="button2Click">
+   <i xid="i2"></i>
+   <span xid="span1" bind-text='val("name")'></span></a></div>
+   <div class="x-col" xid="col3"></div></div></li></ul> </div></li></ul> </div>
   </div>
-   <div class="x-col" xid="col6"><span xid="span1" bind-text='val("name")'></span></div></div></li></ul> </div></li></ul> </div>
-  <a component="$UI/system/components/justep/button/button" class="btn btn-default" label="确定" xid="button1" onClick="button1Click">
-   <i xid="i1"></i>
-   <span xid="span2">确定</span></a></div>
   </div> 
 </div>

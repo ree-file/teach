@@ -19,7 +19,7 @@ define(function(require){
 		var getrecords = information.getrecords();
 	};
 
-	Model.prototype.test=function(aa){
+	Model.prototype.test=function(aa){-
 		aa++;
 		return aa;
 	}
@@ -39,7 +39,6 @@ define(function(require){
 		justep.Shell.showPage("details");
 		
 	};
-
 
 	return Model;
 });
